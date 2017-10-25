@@ -47,8 +47,8 @@
     (loop [set #{}
            seq a-seq]
       (if (empty? seq)
-       set
-       (recur (toggle set (first seq)) (rest seq))))))
+        set
+        (recur (toggle set (first seq)) (rest seq))))))
 
 (defn fast-fibo [n]
   (loop [counter 2
